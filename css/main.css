@@ -2,6 +2,9 @@ body{
     background-color: rgb(5, 5, 5); /* Define a cor de fundo */
     color: white; /* Define a cor do texto */
     max-width: 1200px; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    padding: 10px; /* Adiciona um espaço interno */
+    box-sizing: border-box; /* Garante que a largura máxima inclua o espaço de preenchimento */
 }
 .foto img{
     width: 400px; /* Define a largura desejada da imagem */
@@ -155,3 +158,42 @@ input[type="submit"]:hover {
   #myBtn:hover {
     background-color: #f16d00; /* Cor de fundo ao passar o mouse */
   }
+  /* Media query para dispositivos com largura máxima de 768px (tablets e smartphones) */
+@media only screen and (max-width: 768px) {
+    .foto img {
+        width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
+        margin: 0; /* Remove a margem */
+        float: none; /* Remove a flutuação */
+        border-radius: 0; /* Remove o arredondamento das bordas */
+    }
+
+    .menu {
+        flex-wrap: wrap; /* Permite que os itens do menu sejam exibidos em várias linhas */
+    }
+
+    .menu a {
+        flex: 1 0 50%; /* Define a largura dos itens do menu para ocupar metade da largura da tela */
+        margin: 5px; /* Adiciona uma margem menor */
+    }
+
+    .menu a img {
+        width: 70px; /* Reduz o tamanho das imagens do menu */
+        height: 70px; /* Reduz o tamanho das imagens do menu */
+    }
+
+    .texto p {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+
+    .uninter {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+
+    .figma img {
+        width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
+    }
+
+    .imagem img {
+        width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
+    }
+}
