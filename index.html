@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio pessoal Antônio</title>
+    <!-- Ligação do Html com o CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Criação do botão "Menu" usando java scripit, devido ao tamaho do código usado
+    não vi a necessidade de criar um arquivo .js -->
+    <script>
+        // Quando o usuário rolar 20px da parte superior do documento, exibe o botão
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // Quando o usuário clicar no botão, role para o topo do documento
+        function topFunction() {
+          document.body.scrollTop = 0; // Para Safari
+          document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Inicio da pagina e criação dos botões de navegação -->
+    <div class="titulo">
+        <h1>Ola, meu nome é <span class="laranja">Antonio Sergio</span> sou estudante de ADS</h1>
+    </div>
+    <div id="inicio">
+        <p>MENU:</p>
+    </div>
+    <!-- Com esses botões a navegação do portifolio sera facilitada -->
+    <div class="menu">
+        <a href="#sobremim" class="sobremim">
+            <h2>Sobre mim</h2>
+            <img src="./img/diploma.png">
+        </a>
+        <a href="#formacao" class="formacao">
+            <h2>Formação</h2>
+            <img src="./img/dia-da-formatura.png">
+        </a>
+        <a href="#portfolio" class="portfolio">
+            <h2>Portfólio</h2>
+            <img src="./img/portifoloio.png">
+        </a>
+        <a href="#contato" class="contato">
+            <h2>Contato</h2>
+            <img src="./img/contato.png">
+        </a>
+    </div>
+    <br><br>
+    <hr>
+
+    <!-- Ao clicar no Botao sobre mim o usuário sera redirecionado ao "sobre mim" -->
+    <!-- Sera apresentada informções de Antonio -->
+    <div id="sobremim" class="tamanhotexto">
+        <h2>Sobre Mim</h2>
+    </div>
+    <div class="foto">
+        <img src="./img/Foto perfil.jpg" alt="foto de antonio">
+    </div>
+    <div class="texto">
+        <p>Ola meu nome é Antonio Sergio Loschi dos Santos, tenho 20 anos e faço faculdade de Análise e desenvolvimento
+            de Sistemas na Uninter, e estou totalmente imerso no mundo da programação. Descobri minha paixão por criar
+            códigos e desenvolver soluções tecnológicas há alguns anos, e desde então tenho dedicado todo o meu tempo e
+            energia para me aprimorar nesse campo emocionante e em constante evolução.</p>
+        <p>No momento, estou mergulhado em cursos online, livros e projetos práticos que me desafiam a explorar novas
+            linguagens de programação e a aprofundar meus conhecimentos em áreas como desenvolvimento web, inteligência
+            artificial e segurança da informação. Cada linha de código que escrevo é um passo em direção ao meu grande
+            sonho: tornar-me um desenvolvedor renomado, capaz de impactar positivamente a vida das pessoas por meio da
+            tecnologia.</p>
+        <p>Meus sonhos para o futuro são tão vastos quanto as possibilidades que a programação oferece. Eu me vejo
+            criando aplicativos inovadores que simplifiquem tarefas do cotidiano, desenvolvendo sistemas inteligentes
+            que contribuam para a preservação do meio ambiente e até mesmo participando de projetos de pesquisa que
+            explorem os limites da computação quântica.</p>
+        <p>Além disso, desejo não apenas alcançar o sucesso profissional, mas também inspirar outros jovens a seguirem
+            seus próprios sonhos no campo da tecnologia. Imagino um futuro em que eu possa compartilhar meus
+            conhecimentos e experiências, ajudando a formar a próxima geração de programadores e inovadores.</p>
+        <p>Embora saiba que o caminho para realizar meus sonhos não será fácil, estou determinado a enfrentar os
+            desafios com dedicação, perseverança e um constante desejo de aprendizado. Para mim, cada linha de código
+            que escrevo representa não apenas um passo em direção ao meu futuro, mas também uma oportunidade de
+            transformar o mundo ao meu redor através da magia da programação.</p>
+    </div>
+    <hr>
+    <!-- Ao clicar no Botao formação o usuário sera redirecionado a "Formação" -->
+    <!-- Essa parte é responsavel por mostrar as formações do autor do portifólio -->
+    <div id="formacao" class="tamanhotexto">
+        <h2>Formação</h2>
+    </div>
+    <div class="texto">
+        <p>> Formação em Técnico em informática no Senac</p><br>
+    </div>
+    <div class="imagem">
+        <img src="./img/Senac_logo.svg.png" alt="Senac logo">
+    </div>
+    <br><br><br>
+    <div class="uninter">
+        <p>> Formação em Análise e Desenvolvimento de Sistemas na Uninter em progresso</p>
+    </div>
+    <div class="imagem">
+        <img src="./img/logo uninter.png" alt="Senac logo">
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- Ao clicar no Botao portifólio o usuário sera redirecionado a "Portfólio" -->
+    <!-- Essa parte sera responsavel por mostrar trabalhos que agregão a experiência do criador do portifolio pessoal -->
+    <div id="portfolio" class="tamanhotexto">
+        <h2>Portfólio</h2>
+    </div>
+    <div class="texto">
+        <p>Ao longo das minhas diciplinas estudadas na Uninter, alguns trabalhos que julguei interessantes e que tendem a acrecentar no meu portifólio serão apresentadas aqui.</p>
+        <p>> Prototipação de aplicativos no Figma:</p>
+    </div>
+    <div class="figma">
+        <img src="./img/figma prototipo.png" alt="figma">
+    </div>
+    <br>
+    <div class="texto">
+        <p>No meu estagio, pude aplicar meu conhecimento de tecnico em informatica juntamente com matéria da faculdade.</p>
+        <p>> Nessa imagem tive a oportunidade de abrir 2 notebooks, e retirar suas telas queimadas sem danificar o componente da placa de wifi que ficava dentro da tela:</p>
+    </div>
+    <div class="figma">
+        <img src="./img/fotonotebook.jpg" alt="figma">
+    </div>
+    <br>
+    <div class="texto">
+        <p>> Faço limpeza de computadores, troca de peças e formatações:</p>
+    </div>
+    <div class="figma">
+        <img src="./img/limpeza.jpg" alt="figma">
+    </div>
+    <br><br>
+    <hr>
+    
+    <!-- Ao clicar no Botao Contato o usuário sera redirecionado a "Contato" -->
+    <!-- Essa parte sera para a queles que desejam entrar em cotanto com o Antonio-->
+    <div id="contato" class="tamanhotexto">
+        <h2>Contato</h2>
+    </div>
+    <br><br>
+    <div>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="mensagem">Digite sua Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+            <!-- A mensagem nao sera enviada de verdade, ser a penas para ilustras a um dos requistos do trabalho -->
+            <input type="submit" value="Enviar">
+        </form>
+
+    </div>
+    <!-- Botão responsável por auxiliar na navegação do usuário permitindo que ele volte ao menu da página -->
+    <button onclick="topFunction()" id="myBtn" title="Voltar ao Menu"><Strong>MENU</Strong></button>
+</body>
+
+</html>
