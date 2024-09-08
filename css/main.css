@@ -1,16 +1,21 @@
 body{
-    background-color: rgb(5, 5, 5); /* Define a cor de fundo */
+    background-color: rgb(0, 0, 0); /* Define a cor de fundo */
     color: white; /* Define a cor do texto */
-    max-width: 1200px; /* Define a largura máxima do conteúdo */
+    /*max-width: 1200px;  Define a largura máxima do conteúdo */
     margin: 0 auto; /* Centraliza o conteúdo na página */
-    padding: 10px; /* Adiciona um espaço interno */
+    padding: 1px; /* Adiciona um espaço interno */
     box-sizing: border-box; /* Garante que a largura máxima inclua o espaço de preenchimento */
 }
+header{
+    background-color: #000000;
+}
+
 .foto img{
     width: 400px; /* Define a largura desejada da imagem */
     height: auto; /* Mantém a proporção original da imagem */
     border-radius: 20px; /*arredonda as bordas da imagem*/
     margin: 50px; /* Define a margem ao redor da imagem */
+    margin-top: -40px;
     float: right; /* Alinha a imagem à direita */
 }
 #inicio p{
@@ -72,30 +77,94 @@ body{
 .menu a {
     border-radius: 10px; /* Define o raio da borda */
 }
+.sobremin{
+    background-color: #d4d4d4;
+}
+.sobremin p{
+    color: #000000;
+    margin-left: 10px;
+}
 .tamanhotexto h2{
     font-size: 40px;/* Define o tamanho da fonte */
     color: #FFA500;/* Define a cor do texto */
+    margin-left: 10px;
+    text-shadow: 
+    -1px -1px 0 #000, /* Sombra para o canto superior esquerdo */
+    1px -1px 0 #000,  /* Sombra para o canto superior direito */
+    -1px 1px 0 #000,  /* Sombra para o canto inferior esquerdo */
+    1px 1px 0 #000;   /* Sombra para o canto inferior direito */
+}
+.formacao1{
+  background-color: #ffffff;
 }
 .texto p{
     font-size: 20px; /* Define o tamanho da fonte */
     flex: 1; /* Faz o texto ocupar todo o espaço disponível */
     padding: 0 20px;/* Adiciona um preenchimento */
+    color: #000000;
 }
 .imagem img{
-    width: 200px; /* Define a largura desejada da imagem */
+    width: 100px; /* Define a largura desejada da imagem */
     height: auto; /* Mantém a proporção original da imagem */
-    border-radius: 20px; /*arredonda as bordas da imagem*/
+    border-radius: 5px; /*arredonda as bordas da imagem*/
+    margin-left: 20px;
+
 }
-.uninter{
-    font-size: 20px; /* Define o tamanho da fonte */
-    flex: 1; /* Faz o texto ocupar todo o espaço disponível */
-    padding: 0 20px; /* Adiciona um preenchimento */
+.uninter img{
+    width: 100px; /* Define a largura desejada da imagem */
+    height: auto; /* Mantém a proporção original da imagem */
+    border-radius: 5px; /*arredonda as bordas da imagem*/
+    margin-left: 20px;
+}
+.port{
+    color: #000000;
+    background-color: #d4d4d4;
+
+}
+
+.figma{
+    text-align: center;
 }
 .figma img{
     width: 1220px; /* Define a largura desejada da imagem */
     height: auto; /* Mantém a proporção original da imagem */
     border-radius: 8px; /*arredonda as bordas da imagem*/
 }
+#contato h2{
+    text-align: center; /* Centraliza o texto do título */
+    margin-bottom: 2px; /* Espaço entre o título e os ícones */
+}
+.contoto{
+    background-color: #3b3b3b;
+}
+.contatos {
+    margin: 0;
+    padding: 0;
+    display: flex; /* Adicione isso para alinhar os ícones horizontalmente */
+    justify-content: center; /* Centraliza os ícones */
+    align-items: center; /* Alinha os ícones verticalmente no centro */
+    padding: 10px; /* Adicione algum padding se necessário */
+}
+.contatos a {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 72, 0);
+    margin: 0 6px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+.contatos a img {
+    width: 30px; /* Ajuste o tamanho da imagem se necessário */
+    height: 30px; /* Ajuste o tamanho da imagem se necessário */
+}
+.contatos a:hover {
+    background-color: #e8e3e3db;
+}
+
 form {
     max-width: 400px; /* Define a largura máxima */
     margin: 0 auto; /* Centraliza horizontalmente */
@@ -159,6 +228,7 @@ input[type="submit"]:hover {
     background-color: #f16d00; /* Cor de fundo ao passar o mouse */
   }
   /* Media query para dispositivos com largura máxima de 768px (tablets e smartphones) */
+/* Media query para dispositivos com largura máxima de 768px (tablets e smartphones) */
 @media only screen and (max-width: 768px) {
     .foto img {
         width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
@@ -169,10 +239,11 @@ input[type="submit"]:hover {
 
     .menu {
         flex-wrap: wrap; /* Permite que os itens do menu sejam exibidos em várias linhas */
+        justify-content: center; /* Centraliza o menu horizontalmente */
     }
 
     .menu a {
-        flex: 1 0 50%; /* Define a largura dos itens do menu para ocupar metade da largura da tela */
+        flex: 1 0 45%; /* Ajusta a largura dos itens do menu para ocupar 45% da largura da tela */
         margin: 5px; /* Adiciona uma margem menor */
     }
 
@@ -185,15 +256,30 @@ input[type="submit"]:hover {
         font-size: 16px; /* Reduz o tamanho da fonte */
     }
 
-    .uninter {
-        font-size: 16px; /* Reduz o tamanho da fonte */
-    }
-
+    .uninter img,
+    .imagem img,
     .figma img {
-        width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
+        width: 100%; /* Ajusta a largura das imagens para ocupar 100% do contêiner */
     }
 
-    .imagem img {
-        width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
+    .formacao1 .imagem img,
+    .formacao1 .uninter img {
+        width: 80%; /* Ajusta a largura das imagens para 80% do contêiner */
+    }
+
+    .contatos a {
+        width: 40px; /* Reduz o tamanho dos ícones de contato */
+        height: 40px; /* Reduz o tamanho dos ícones de contato */
+    }
+
+    .contatos a img {
+        width: 24px; /* Ajusta o tamanho das imagens dos ícones de contato */
+        height: 24px; /* Ajusta o tamanho das imagens dos ícones de contato */
+    }
+
+    .tamanhotexto h2 {
+        font-size: 32px; /* Reduz o tamanho do título */
+        margin-left: 0; /* Remove a margem esquerda */
+        text-align: center; /* Centraliza o texto */
     }
 }
