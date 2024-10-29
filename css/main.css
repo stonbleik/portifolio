@@ -283,3 +283,9 @@ input[type="submit"]:hover {
         text-align: center; /* Centraliza o texto */
     }
 }
+@media only screen and (min-width: 769px) {
+    .foto img{
+        height: 350px;
+        width: 280px;
+    }
+}
